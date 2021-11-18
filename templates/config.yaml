@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: something
+data:
+  settings.py: |
+{{ .Files.Get "../config.file" | indent 4}}
