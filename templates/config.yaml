@@ -4,4 +4,4 @@ metadata:
   name: something
 data:
   settings.py: |
-{{ .Files.Get "../config.file" | indent 4}}
+{{ .Files.Get "config.file" | indent 4}}
